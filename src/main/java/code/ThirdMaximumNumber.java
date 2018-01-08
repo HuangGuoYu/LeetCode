@@ -1,5 +1,7 @@
 package code;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,6 +25,20 @@ public class ThirdMaximumNumber {
         System.out.println(crypt + "---" + crypt.length());
         System.out.println(crypt.substring(8, 24));
 
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("obj", "huang");
+        System.out.println( "result" + map.get("obj").equals("huang"));
 
+    }
+
+    public static boolean getbool() {
+        boolean bool = true;
+        try {
+            int a = 5 / 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            bool = false;
+        }
+        return bool;
     }
 }
